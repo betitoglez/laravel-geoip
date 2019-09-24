@@ -1,0 +1,38 @@
+{
+  "name": "betitoglez/laravel-geoip",
+  "description": "GEOIp Locator package for Laravel 5.x",
+  "license": "MIT",
+  "keywords": [
+    "laravel",
+    "geoip",
+    "ip locator"
+  ],
+  "authors": [
+    {
+      "name": "Alberto González",
+      "email": "betitoglez@gmail.com",
+      "role": "Author"
+    }
+  ],
+  "require": {
+    "php": ">=5.6.0",
+    "laravel/framework": "5.*",
+	"guzzlehttp/guzzle":"^6.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Betitoglez\\Geoip\\": "src/"
+    }
+  },
+  "extra": {
+	"laravel": {
+        "providers": [
+            "Betitoglez\\Geoip\\GeoipServiceProvider"
+        ],
+        "aliases": {
+            "Geoip": "Betitoglez\\Geoip\\Facades\\GeoipFacade"
+        }
+    }
+  },
+  "minimum-stability": "dev"
+}
